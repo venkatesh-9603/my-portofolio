@@ -341,11 +341,29 @@
             background: rgba(255, 255, 255, 0.15);
         }
 
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
         .skill-name {
             color: white;
             font-weight: 600;
-            margin-bottom: 1rem;
             font-size: 1.1rem;
+        }
+
+        .skill-percentage {
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            min-width: 50px;
+            text-align: center;
         }
 
         .skill-bar {
@@ -358,12 +376,12 @@
 
         .skill-progress {
             height: 100%;
-            background: linear-gradient(90deg, #6252bb, #6252bb);
+            background: linear-gradient(90deg, #667eea, #764ba2);
             border-radius: 4px;
             transition: width 36000s ease;
         }
 
-        /* Contact Form */
+        /* Contact Section */
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -542,6 +560,12 @@
                 <a href="#" class="btn-primary" data-section="projects">
                     🚀 View My Work
                 </a>
+                <a href="#" class="btn-secondary" data-section="about">
+                    👨‍💻 About Me
+                </a>
+                <a href="#" class="btn-secondary" data-section="skills">
+                    ⚡ My Skills
+                </a>
                 <a href="#" class="btn-secondary" data-section="contact">
                     💬 Get In Touch
                 </a>
@@ -551,13 +575,19 @@
         <!-- About Section -->
         <section id="about" class="section">
             <h1 class="section-title">About Me</h1>
-            <p class="section-subtitle">With over 5 years of experience in web development, I specialize in creating modern, responsive applications using cutting-edge technologies. I'm passionate about clean code, user experience, and continuous learning.</p>
+            <p class="section-subtitle">With getting experience in web development, I specialize in creating modern, responsive applications using cutting-edge technologies. I'm passionate about clean code, user experience, and continuous learning.</p>
             
             <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); border-radius: 20px; padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.2);">
                 <h3 style="color: white; margin-bottom: 1rem;">My Journey</h3>
                 <p style="color: rgba(255, 255, 255, 0.9); line-height: 1.6;">
-                    Started as a curious student learning HTML and CSS, evolved into a full-stack developer working with React, Node.js, and modern frameworks. I love solving complex problems and turning ideas into reality through code.
+                    Started as a curious student learning HTML and CSS JavaScript. I love solving complex problems and turning ideas into reality through code.
                 </p>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#" class="btn-secondary" data-section="home">
+                    🏠 Back to Home
+                </a>
             </div>
         </section>
 
@@ -570,11 +600,11 @@
                 <div class="project-card">
                     <div class="project-image">🌐</div>
                     <div class="project-content">
-                        <h3 class="project-title">BODY MASS INDEX CALCULATOR</h3>
+                        <h3 class="project-title">BODY MASS INDEX CALCULATO</h3>
                         <p class="project-description">A BMI (Body Mass Index) calculator is a simple tool that helps determine whether a person has a healthy body weight for their height. 
                             By taking input of a person’s weight (in kilograms or pounds) and height (in meters or inches)</p>
                         <div class="project-tags">
-                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">HTML</HTML></span>
                             <span class="project-tag">CSS</span>
                             <span class="project-tag">JavaScript</span>
                         </div>
@@ -603,6 +633,12 @@
                     </div>
                 </div>
             </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#" class="btn-secondary" data-section="home">
+                    🏠 Back to Home
+                </a>
+            </div>
         </section>
 
         <!-- Skills Section -->
@@ -612,44 +648,8 @@
             
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-name">HTML</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-card">
-                    <div class="skill-name">CSS</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-card">
-                    <div class="skill-name">JavaScript</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-card">
-                    <div class="skill-name">UI/UX Design</div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 100%;"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="skills" class="section">
-            <h1 class="section-title">My Skills</h1>
-            <p class="section-subtitle">Technologies and tools I work with to bring ideas to life.</p>
-            
-            <div class="skills-grid">
-                <div class="skill-card">
                     <div class="skill-header">
-                        <div class="skill-name">JavaScript / TypeScript</div>
+                        <div class="skill-name">HTML</div>
                         <div class="skill-percentage">95%</div>
                     </div>
                     <div class="skill-bar">
@@ -659,8 +659,8 @@
                 
                 <div class="skill-card">
                     <div class="skill-header">
-                        <div class="skill-name">React / Next.js</div>
-                        <div class="skill-percentage">90%</div>
+                        <div class="skill-name">CSS</div>
+                        <div class="skill-percentage">95%</div>
                     </div>
                     <div class="skill-bar">
                         <div class="skill-progress" style="width: 90%;"></div>
@@ -669,43 +669,28 @@
                 
                 <div class="skill-card">
                     <div class="skill-header">
-                        <div class="skill-name">Node.js / Express</div>
-                        <div class="skill-percentage">85%</div>
+                        <div class="skill-name">JavaScript</div>
+                        <div class="skill-percentage">95%</div>
                     </div>
                     <div class="skill-bar">
                         <div class="skill-progress" style="width: 85%;"></div>
                     </div>
                 </div>
-                
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <div class="skill-name">Python / Django</div>
-                        <div class="skill-percentage">80%</div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 80%;"></div>
-                    </div>
-                </div>
-                
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <div class="skill-name">Database Design</div>
-                        <div class="skill-percentage">88%</div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 88%;"></div>
-                    </div>
-                </div>
-                
                 <div class="skill-card">
                     <div class="skill-header">
                         <div class="skill-name">UI/UX Design</div>
-                        <div class="skill-percentage">75%</div>
+                        <div class="skill-percentage">95%</div>
                     </div>
                     <div class="skill-bar">
                         <div class="skill-progress" style="width: 75%;"></div>
                     </div>
                 </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#" class="btn-secondary" data-section="home">
+                    🏠 Back to Home
+                </a>
             </div>
         </section>
 
@@ -720,8 +705,8 @@
                     <div class="contact-icon">📧</div>
                     <h3 class="contact-title">Email Me</h3>
                     <p class="contact-description">Drop me a line anytime</p>
-                    <a href="mailto:mrvenkatesh0963@gmail.com" class="contact-button">
-                        mrvenkatesh0963@gmail.com
+                    <a href="mailto:mrvenkatesh0963@.com" class="contact-button">
+                        mrvenkatesh0963@.com
                     </a>
                 </div>
 
@@ -760,6 +745,12 @@
                         <span>YouTube</span>
                     </a>
                 </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#" class="btn-secondary" data-section="home">
+                    🏠 Back to Home
+                </a>
             </div>
         </section>
     </main>
@@ -803,20 +794,9 @@
             }
         });
 
-        // Form submission
-        function handleSubmit(event) {
-            event.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(event.target);
-            const name = event.target.querySelector('input[type="text"]').value;
-            
-            // Show success message
-            alert(`Thank you ${name}! Your message has been sent. I'll get back to you soon!`);
-            
-            // Reset form
-            event.target.reset();
-        }
+        // Contact buttons work automatically with href links - no JavaScript needed!
+
+
 
         // Animate skill bars on scroll
         function animateSkills() {
@@ -851,6 +831,5 @@
 
         // Project buttons now work with actual links - no JavaScript needed!
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'988d12adf6e7c1d2',t:'MTc1OTUwMTE1MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'988d69de3256c1d2',t:'MTc1OTUwNDcyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
-
